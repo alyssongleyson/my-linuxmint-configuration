@@ -34,3 +34,6 @@ apt_packages=(
 	vlc
 )
 
+echo "Installing packages using apt..."
+sudo apt install -y "${apt_packages[@]}"
+
