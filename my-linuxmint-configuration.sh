@@ -7,6 +7,9 @@
 # Author:	Álysson Gleyson da Silva
 ###################################################################
 
+# Stop script on error
+set -e
+
 # Updating operating system, repositories, and flatpak software
 
 sudo apt update && sudo apt upgrade -y
