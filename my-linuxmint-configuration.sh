@@ -15,3 +15,22 @@ set -e
 sudo apt update && sudo apt upgrade -y
 flatpak update -y
 
+# Installation using APT
+
+apt_packages=(
+	git
+	rar
+	unrar
+	vim
+	virtualbox
+	terminator
+	wine
+	cheese
+	flameshot
+	steam
+	synapse
+	php
+	copyq
+	vlc
+)
+
