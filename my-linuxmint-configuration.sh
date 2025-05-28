@@ -7,3 +7,8 @@
 # Author:	Álysson Gleyson da Silva
 ###################################################################
 
+# Updating operating system, repositories, and flatpak software
+
+sudo apt update && sudo apt upgrade -y
+flatpak update -y
+
