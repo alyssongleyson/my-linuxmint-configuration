@@ -46,3 +46,8 @@ flatpak_packages=(
 	com.jetbrains.PyCharm-Community
 )
 
+echo "Installing packages using flatpak..."
+for pkg in "${flatpak_packages[@]}"; do
+	flatpak install -y flathub "$pkg"
+done
+
