@@ -37,3 +37,12 @@ apt_packages=(
 echo "Installing packages using apt..."
 sudo apt install -y "${apt_packages[@]}"
 
+# Installation using Flatpak
+
+flatpak_packages=(
+	md.obsidian.Obsidian
+	com.brave.Browser
+	com.bitwarden.desktop
+	com.jetbrains.PyCharm-Community
+)
+
