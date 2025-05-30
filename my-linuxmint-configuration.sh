@@ -51,3 +51,17 @@ for pkg in "${flatpak_packages[@]}"; do
 	flatpak install -y flathub "$pkg"
 done
 
+# Installation using wget
+
+install_external_app() {
+	local url=$1
+	local deb_name=$(basename "$url")
+
+	echo "Downloadng $deb_name..."
+	wget -q "$url" -O "/tmp/$deb_name"
+
+	echo "Installing $deb_name..."
+	sudo dpkg -i "/tmp/$deb_name" || sudo apt install -f -y
+	rm "/tmp/$deb_name"
+}
+
