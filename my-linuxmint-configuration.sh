@@ -65,3 +65,11 @@ install_external_app() {
 	rm "/tmp/$deb_name"
 }
 
+echo "Installing external packages using .deb..."
+
+# VS Code
+install_external_app "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+
+# Sublime Text
+install_external_app "https://download.sublimetext.com/sublime-text_build-3211_amd64.deb"
+
